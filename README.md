@@ -20,7 +20,7 @@ UNIX
 
 Basically clone the repository to your ``.vim`` folder, make your .vimrc a link to the one inside the cloned repository and then download all the submodules (the plugins).
 
-    git clone https://github.com/ecorbari/vim-setup.git ~/.vim
+    git clone https://github.com/edersoncorbari/vim-setup.git ~/.vim
     ln -s ~/.vim/vimrc ~/.vimrc
     cd ~/.vim
     git submodule update --init
@@ -51,7 +51,6 @@ Install fonts that work with Powerline:
     cd fonts
     ./install.sh
     
-
 Then set you terminal to use one of those font, you can try `Inconsolata for Powerline`.
 
 Updating plugins
@@ -65,17 +64,16 @@ If a new submodule (plugin) is added to this repository since the time you clone
 
     git submodule update --init
 
-
 Add or remove plugins
 ================
     
-* Example to add new plugin:
+Example to add new plugin:
 
     cd ~/.vim 
     git submodule add https://github.com/wincent/command-t.git bundle/command-t
     git submodule init
 
-* Example to remove plugin:
+Example to remove plugin:
 
     cd ~/.vim 
     git submodule deinit bundle/vim-rvm
